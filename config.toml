@@ -1,0 +1,9 @@
+[logs]
+write_logs=false
+logs_path="./"
+
+[telegram]
+token=""
+
+[bot]
+log_unknowm=false
