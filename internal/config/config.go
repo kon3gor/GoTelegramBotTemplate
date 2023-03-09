@@ -1,7 +1,6 @@
 package config
 
 import (
-	"fmt"
 	"io/ioutil"
 	"os"
 
@@ -9,8 +8,8 @@ import (
 )
 
 type logs struct {
-	write_logs bool
-	logs_path  string
+	write bool
+	path  string
 }
 
 type telegram struct {
@@ -41,8 +40,6 @@ func ReadConfig() error {
 		return err
 	}
 	toml.Unmarshal(b, &config)
-	fmt.Println(config.logs.write_logs)
 
 	return nil
 }
-

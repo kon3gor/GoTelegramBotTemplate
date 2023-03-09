@@ -1,6 +1,6 @@
 [logs]
-write_logs=false
-logs_path="./"
+write=false
+path="./"
 
 [telegram]
 token=""

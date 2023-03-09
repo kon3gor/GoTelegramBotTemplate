@@ -5,7 +5,7 @@ func Token() string {
 }
 
 func WriteLogs() bool {
-	return config.logs.write_logs
+	return config.logs.write
 }
 
 func LogUnknown() bool {
@@ -13,5 +13,5 @@ func LogUnknown() bool {
 }
 
 func LogsPath() string {
-	return config.logs.logs_path
+	return config.logs.path
 }
